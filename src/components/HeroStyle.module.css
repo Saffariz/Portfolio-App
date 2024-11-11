@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden; /* Hide horizontal overflow */
+	width: 100%; /* Ensure the width takes up the full screen */
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	height: 100vh;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+.hero {
+	max-width: 200px;
+}
+
+.inlineAnimation {
+	display: inline-block;
+	width: 300px;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.heroImg {
+	width: 100%; /* Let the image scale responsively */
+	max-width: 500px; /* Maximum width for larger screens */
+	height: auto; /* Maintain aspect ratio */
+	border-radius: 50%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+p {
+	display: flex;
+	flex-direction: column; /* Align text vertically */
+	align-items: flex-start; /* Align text to the left */
+	line-height: 1; /* Add spacing between lines */
+}
+
+span {
+	display: inline; /* Ensure text stays inline within span */
+	text-align: left; /* Align text to the left inside the span */
+}
+
+.first-line,
+.second-line {
+	margin: 0; /* Ensure no margin added around the lines */
+}
+/* Use only one span selector and align child elements properly */
+span {
+	display: flex;
+	gap: 25px; /* Space between the icons */
+	justify-content: flex-start; /* Align items to the left */
+	align-items: center; /* Vertically align the items at the center */
+}
+
+a {
+	width: fit-content;
+	justify-content: flex-start;
+}
+
+/* Move button styles out of .container */
+.styled-button {
+	display: inline-block;
+	background-color: #3f3f3f;
+	border-radius: 20px;
+	width: 126px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.styled-button:hover {
+	background-color: #5f5f5f;
+	cursor: pointer;
+}
+
+h1 {
+	font-family: "Mulish", sans-serif;
+	font-size: 44px;
+	text-align: left;
+	line-height: 1.5em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 24px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+h2 span {
+	margin: 0 20px;
+}
+
+p {
+	text-align: left; /* Align the text inside the p to the left */
+	margin: 0; /* Remove any default margin if needed */
+}
+
+span {
+	display: flex; /* Ensure spans stay inline and follow text alignment */
+}
+
+.linkedinIconIcon,
+.githubIcon {
+	font-size: 40px; /* Icon size */
+	color: #fff; /* Icon color */
+	transition: color 0.3s ease;
+}
+
+.linkedinIconIcon:hover {
+	color: #0077b5;
+}
+
+.githubIcon:hover {
+	color: #333;
+}
+
+.iconContainer {
+	display: flex;
+	align-items: center; /* Vertically center the icons */
+	gap: 25px; /* Space between the icons and the line */
+	justify-content: flex-start; /* Centers the icons and the line */
+}
+
+/* Horizontal line */
+.line {
+	flex-grow: 1; /* Make the line take up remaining space between the icons */
+	height: 2px; /* Make the line thin */
+	background-color: #fff; /* Set the line color */
+	margin: 0 10px; /* Adjust space around the line */
+}
+@media (min-width: 800px) {
+	.container {
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.hero {
+		max-width: 350px;
+		width: 350px;
+	}
+}

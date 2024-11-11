@@ -1,0 +1,212 @@
+/* Skill Header and Paragraph */
+.skill-header {
+	color: white;
+	font-family: "Mulish", sans-serif;
+	font-size: 44px;
+	font-weight: 700;
+}
+
+.skill-paragraph {
+	padding-top: 50px;
+	color: white;
+	font-family: "Mulish", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.skillsSection {
+	position: relative;
+	padding: 10rem 0 23vh 8.5vw; /* Top padding: 14rem, Left padding: 6vw, Bottom padding: 23vh */
+	z-index: 4;
+}
+
+/* Skill header and paragraph styling */
+.skill-header {
+	color: white;
+	font-family: "Mulish", sans-serif;
+	font-size: 44px;
+	font-weight: 700;
+	text-align: left; /* Align header to the left */
+}
+
+.skill-paragraph {
+	padding-top: 50px;
+	color: white;
+	font-family: "Mulish", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: left; /* Align paragraph text to the left */
+}
+
+/* Skill section layout */
+.skill-section {
+	padding-top: 70px;
+}
+
+/* CSS Grid for Skills Layout */
+.skills {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+	gap: 30px;
+	padding-top: 100px;
+	align-items: center; /* Vertically align items in the center */
+}
+
+/* Individual skill name styling */
+.skillName {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 10px;
+	width: 180px;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Example specific color classes for each skill */
+.javascriptes6 {
+	background-color: #f7df1e; /* JavaScript color */
+	color: #fff;
+}
+
+.reactjs {
+	background-color: #61dafb; /* React color */
+	color: #fff;
+}
+
+.nodejs {
+	background-color: #68a063; /* NodeJS color */
+	color: #fff;
+}
+
+.git {
+	background-color: #f1502f; /* Git color */
+	color: #fff;
+}
+
+.html5 {
+	background-color: #e34f26; /* HTML5 color */
+	color: #fff;
+}
+
+.css3 {
+	background-color: #2965f1; /* CSS3 color */
+	color: #fff;
+}
+
+.sass {
+	background-color: #cd6799; /* SASS color */
+	color: #fff;
+}
+
+.mongodb {
+	background-color: #47a248; /* MongoDB color */
+	color: #fff;
+}
+
+.skills .skillName.expressjs {
+	background-color: #216c57;
+}
+
+.python {
+	background-color: #f3d74b; /* Python color */
+	color: #fff;
+}
+
+.jquery {
+	background-color: #0769ad; /* jQuery color */
+	color: #fff;
+}
+
+.skills .skillName.cpppp {
+	background-color: #2d53ac; /* Color for C++ */
+}
+
+.skillName:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* 4K Laptop Display */
+@media screen and (max-width: 1710px) {
+	.skill-section {
+		padding-left: 122px;
+	}
+}
+
+/* Larger Screen Devices */
+@media screen and (max-width: 1400px) {
+	.skill-section {
+		padding-left: 90px;
+	}
+	.skill-header {
+		font-size: 34px;
+	}
+	.skill-name {
+		font-size: 15px;
+	}
+	.skill-paragraph {
+		font-size: 15px;
+	}
+}
+
+/* Medium Screens */
+@media screen and (max-width: 1200px) {
+	.skill-section {
+		padding-left: 90px;
+	}
+	.skill-header {
+		font-size: 34px;
+	}
+	.skill-name {
+		font-size: 15px;
+	}
+	.skill-paragraph {
+		font-size: 15px;
+	}
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 769px) {
+	.skill-section {
+		padding-left: 55px;
+		padding-top: 10px;
+	}
+	.skill-header {
+		font-size: 44px;
+	}
+	.skills {
+		grid-template-columns: repeat(2, 1fr); /* 2 items per row on mobile */
+	}
+	.skill-paragraph {
+		max-width: 100%;
+		font-size: 18.5px;
+	}
+}
+
+/* iPhone and Smaller Screens */
+@media screen and (max-width: 415px) {
+	.skill-header {
+		font-size: 21px;
+	}
+
+	.skill-paragraph {
+		font-size: 8px; /* Adjust for readability */
+	}
+
+	.skill-section {
+		padding-left: 35px;
+		padding-top: 10px;
+		margin-bottom: 175px;
+	}
+
+	.skills {
+		grid-template-columns: 1fr; /* 1 item per row on very small screens */
+	}
+}
